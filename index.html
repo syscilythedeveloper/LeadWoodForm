@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form id="preliminary-questions" action="./index.js">
+        <h1>Registration</h1>
+        <div class="input-control">
+          <label for="first-name">First Name </label>
+          <input id="first-name" type="text" value="" />
+        </div>
+        <div class="input-control">
+          <label for="last-name">Last Name </label>
+          <input id="last-name" type="text" />
+        </div>
+
+        <div class="input-control">
+          <label for="email">Email </label>
+          <input id="email" type="text" />
+        </div>
+
+        <div class="conditonal_questions salary">
+          <label for="annualSalary">
+            What is your current household salary?</label
+          >
+          <select id="annualSalary" name="annualSalary">
+            <option value="salaryTier0">Less than $100K</option>
+            <option value="salaryTier1">$100K - $150K</option>
+            <option value="salaryTier2">$150K - $200K</option>
+            <option value="salaryTier3">$200K or more</option>
+          </select>
+        </div>
+
+        <div class="condiitonal_questions assets">
+          <label for="totalAssetsValues">
+            When you calculate the total values acorss your savings,
+            investments, and retirement accounts, your aggregate investible
+            assessets amount to approximatley?</label
+          >
+          <select id="totalAssetsValue" name="annualSalary">
+            <option value="totalAssetsTier0">Less than $100K</option>
+            <option value="totalAssetsTier1">Between $100-$1M</option>
+            <option value="totalAssetsTier2">More than $1M</option>
+          </select>
+        </div>
+
+        <div class="conditional_questions inheritance">
+          <label for="inheritance_check">
+            Have you recently experienced or anticpate any of the following
+            (chceck all that applicy )</label
+          >
+          <div>
+            <input
+              type="checkbox"
+              id="marriage"
+              name="marriage"
+              value="marriage"
+            />
+            <label for="marriage">Marriage</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="divorce"
+              name="divorce"
+              value="divorce"
+            />
+            <label for="divorce">Divorce</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="child" name="child" value="child" />
+            <label for="child"> New child</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="job" name="job" value="job" />
+            <label for="job">New job</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="inheritance"
+              name="inheritance"
+              value="inheritance"
+            />
+            <label for="inheritance">Inheritance</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="lostSpouse"
+              name="lostSpouse"
+              value="lostSpouse"
+            />
+            <label for="lostSpouse">Loss of Spouse</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="other" name="other" value="other" />
+            <label for="other"> Other (We'll ask at meeting)</label>
+          </div>
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+
+      <form id="followup-questions">
+        <h2>FollowUp questions</h2>
+
+        <div class="input-control">
+          <label for="firstName">First Name </label>
+          <input id="firstName" type="text" />
+        </div>
+        <div class="input-control">
+          <label for="lastName">Last Name </label>
+          <input id="firstName" type="text" />
+        </div>
+
+        <div class="input-control">
+          <label for="email">Email </label>
+          <input id="email" type="text" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
